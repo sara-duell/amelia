@@ -1,19 +1,6 @@
-
-body,html{
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    border: 0;
+* {
+  font-family: sans-serif;
 }
-
-body {
-  text-align: center;
-  background-color: black;
-  font-size: 1em;
-  font-family: 'Supermercado One', cursive;
-  color: coral;
-}
-
 table {
   border: 1px solid black;
   border-collapse: collapse;
