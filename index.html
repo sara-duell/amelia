@@ -1,35 +1,29 @@
-<div id="app">
-  <table v-if="movies.length">
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th>Year</th>
-        <th>URL</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr v-for="movie in movies">
-        <td>{{movie.Title}}</td>
-        <td>{{movie.Year}}</td>
-        <td><a :href="movie.Url" target="_blank">{{movie.Url}}</a></td>
-      </tr>
-    </tbody>
-  </table>
+<!DOCTYPE html>
+<html>
 
-  <table v-if="shows.length">
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th>Last watched season</th>
-        <th>URL</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr v-for="show in shows">
-        <td>{{show.Title}}</td>
-        <td>{{show["Last watched season"]}}</td>
-        <td><a :href="show.Url" target="_blank">{{show.Url}}</a></td>
-      </tr>
-    </tbody>
-  </table>
+<head>
+  <!-- this line specifies the character set and helps you use emojis! -->
+  <meta charset="utf-8">
+  <!-- this line helps you make a responsive site -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+  <script language="JavaScript" src="main.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <title>AMELIA</title>
+</head>
+
+<body>
+<div class="wrapper">
+<div class="input-group"><input type="text" id="quicksearch" class="form-control" placeholder="Search" /></div>
+<div id="filter" class="btn-group" role="group"><button id="allbuttons" class="btn btn-default is-checked" data-value="*">Show All</button></div>
+<div id="database"><br /></div>
 </div>
+
+  
+</body>
+
+</html>
