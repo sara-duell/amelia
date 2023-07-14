@@ -1,94 +1,35 @@
+<div id="app">
+  <table v-if="movies.length">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Year</th>
+        <th>URL</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr v-for="movie in movies">
+        <td>{{movie.Title}}</td>
+        <td>{{movie.Year}}</td>
+        <td><a :href="movie.Url" target="_blank">{{movie.Url}}</a></td>
+      </tr>
+    </tbody>
+  </table>
 
-<!DOCTYPE html>
-<html>
-
-<head>
-  <!-- this line specifies the character set and helps you use emojis! -->
-  <meta charset="utf-8">
-  <!-- this line helps you make a responsive site -->
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
-  <script language="JavaScript" src="main.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
-  <link rel="stylesheet" href="main.css">
-  <title>AMELIA</title>
-</head>
-
-<body>
-
-
-<a href="#" id="video_link" >
-  <video id="video_tag" width="100%" autoplay="autoplay" loop muted>
-    <source id="video_source" src="" type="video/mp4" >
-  </video>
-</a>
-
-<div class="content">
-  <h1>Amelia</h1>
-    <div class="my-fun-class">
-    </div>
-  </br></br>
-    <div class="my-fun-class-2">
-    </div>
-  </br>
-
+  <table v-if="shows.length">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Last watched season</th>
+        <th>URL</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr v-for="show in shows">
+        <td>{{show.Title}}</td>
+        <td>{{show["Last watched season"]}}</td>
+        <td><a :href="show.Url" target="_blank">{{show.Url}}</a></td>
+      </tr>
+    </tbody>
+  </table>
 </div>
-
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js'></script>
-    <script type="text/javascript">
-
-    console.log( "ready!" );
-
-
-    function init() {
-              Papa.parse('https://docs.google.com/spreadsheets/d/e/2PACX-1vSW4eF8jVfz435STbW_ofGgk5DWXtZZyxN1PEixwt3ah_1D3Hg1a2CREv3BbbZN23hsI9eJqqsRCuGR/pub?output=csv', {
-                download: true,
-                header: false,
-                complete: function(results) {
-                  var data = results.data
-                  console.log(data)
-
-                  // Put every timestamp in a div
-               for (var entry of data) {
-               console.log(entry.description);
-               $( ".my-fun-class" ).append( "<p>"+ entry.description +"</p>" );
-                }
-
-
-
-                  //for (var entry of data) {
-                      //note that it's not as simple to address this value becuase the name of it is not very machine readable, unlike "Timestamp." The name of it is "What ways do you like to invite someone to do something with you?." This can't be used in the same way becuase of all the spaces and punctuation so we need to address it by referring to is as the second key of each object (remember second looks like [1]) for each entry object.
-                     // var description = entry[Object.keys(entry)[1]]
-                     // console.log(description)
-                   //   $( ".my-fun-class" ).append( "<p>"+ description +"</p>" );
-                //  }
-            
-
-                  //// This is the original table code that displays the data similar to the way the spreadsheet looks using a table library
-                  // var options = {
-                  //     element: document.getElementById("table"),
-                  //     data: data
-                  // };
-                  //
-                  // var table = new Table(options);
-                  // table.view();
-
-                }
-              })
-            }
-
-      window.addEventListener('DOMContentLoaded', init);
-      </script>
-
-
-</body>
-
-
-</body>
-
-</html>
