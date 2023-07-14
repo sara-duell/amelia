@@ -31,12 +31,13 @@ console.log("vid array at index 0 = " + vid_array[0]) // DOES NOT EXIST
 
   });
 function init() {
-    Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vSW4eF8jVfz435STbW_ofGgk5DWXtZZyxN1PEixwt3ah_1D3Hg1a2CREv3BbbZN23hsI9eJqqsRCuGR/pub?output=csv", {
+Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vSIw_W07NOnB4VWVjWXRFdzU0O8jEf8lg3hJ5CkxftpEZ_coBarSxZky9R91watDkfxdTCXkt4m8hOj/pub?output=csv", {
                 download: true,
                 header: false,
                 complete: function(results) {
                   var data = results.data
                   console.log(data)
+
 
 
     }
