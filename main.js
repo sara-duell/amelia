@@ -40,7 +40,7 @@ console.log("vid array at index 0 = " + vid_array[0]) // DOES NOT EXIST
     console.log( "ready!" );
 
 const moviesUrl =
-  "https://docs.google.com/spreadsheets/d/e/2PACX-https://docs.google.com/spreadsheets/d/e/2PACX-1vSW4eF8jVfz435STbW_ofGgk5DWXtZZyxN1PEixwt3ah_1D3Hg1a2CREv3BbbZN23hsI9eJqqsRCuGR/pubhtml-QoDWk/pub?gid=0&single=true&output=csvhttps://docs.google.com/spreadsheets/d/e/2PACX-1vSW4eF8jVfz435STbW_ofGgk5DWXtZZyxN1PEixwt3ah_1D3Hg1a2CREv3BbbZN23hsI9eJqqsRCuGR/pubhtml";
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vSW4eF8jVfz435STbW_ofGgk5DWXtZZyxN1PEixwt3ah_1D3Hg1a2CREv3BbbZN23hsI9eJqqsRCuGR/pub?output=csv";
 
 const showsUrl =
   "https://docs.google.com/spreadsheets/d/e/2PACX-1vTtKbv_S8Fdo3HLhm64Tc94WZ6FuqtzqePIjuejNFJxKkUvAE8JF8V2KgKoz1n5jQUDfL8A3F-QoDWk/pub?gid=1364847678&single=true&output=csv";
