@@ -7,7 +7,7 @@ $(document).ready(function() {
 
 
 
-// var basic_array = [1,2];
+// var basic_array = [2,3];
 //
 // console.log(basic_array[0]);
 
