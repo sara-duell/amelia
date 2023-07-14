@@ -55,19 +55,19 @@
                   console.log(data)
 
                   // Put every timestamp in a div
-                  // for (var entry of data) {
-                  //     console.log(entry.Timestamp);
-                  //     $( ".my-fun-class" ).append( "<p>"+ entry.Timestamp +"</p>" );
-                  // }
+               for (var entry of data) {
+               console.log(entry.description);
+               $( ".my-fun-class" ).append( "<p>"+ entry.description +"</p>" );
+                }
 
 
 
-                  for (var entry of data) {
+                  //for (var entry of data) {
                       //note that it's not as simple to address this value becuase the name of it is not very machine readable, unlike "Timestamp." The name of it is "What ways do you like to invite someone to do something with you?." This can't be used in the same way becuase of all the spaces and punctuation so we need to address it by referring to is as the second key of each object (remember second looks like [1]) for each entry object.
-                      var description = entry[Object.keys(entry)[1]]
-                      console.log(description)
-                      $( ".my-fun-class" ).append( "<p>"+ description +"</p>" );
-                  }
+                     // var description = entry[Object.keys(entry)[1]]
+                     // console.log(description)
+                   //   $( ".my-fun-class" ).append( "<p>"+ description +"</p>" );
+                //  }
             
 
                   //// This is the original table code that displays the data similar to the way the spreadsheet looks using a table library
