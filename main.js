@@ -28,6 +28,6 @@ console.log("vid array at index 0 = " + vid_array[0]) // DOES NOT EXIST
     console.log(new_vid);
 
 
-}
+
 
   });
