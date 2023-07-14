@@ -35,19 +35,14 @@ console.log("vid array at index 0 = " + vid_array[0]) // DOES NOT EXIST
 
 const parseFile = () => new Promise((resolve) => {
     Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vSW4eF8jVfz435STbW_ofGgk5DWXtZZyxN1PEixwt3ah_1D3Hg1a2CREv3BbbZN23hsI9eJqqsRCuGR/pub?output=csv", {
-        download: true,
-        header: true,
-        complete: (results) => {
-            resolve(results.data);
-        }
-    });
+    download: true,
+    header: true,
+    complete: (results) => {
+        const data = results.data;
+        console.log(data);
+    }
 });
 
-export async function fetchParsedData() {
-    const parsedData = await parseFile();
-    console.log(parsedData);
-    return parsedData;
-}
 
 });
 
