@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
 
   var videoID = 'video_tag';
@@ -26,10 +25,8 @@ console.log("vid array at index 0 = " + vid_array[0]) // DOES NOT EXIST
     new_vid = vid_array[i];
     console.log(i)
     console.log(new_vid);
- }
+
 
 
 
   });
-
-
