@@ -1,73 +1,27 @@
+let img01, img02;
+let topLayer;
 
-$(document).ready(function() {
+function preload() {
+    img01 = loadImage("sorrel1.jpg");
+    img02 = loadImage("sorrel2.jpg");
+}
 
-  var videoID = 'video_tag';
-  var sourceID = 'video_source';
-  var vid_array = ["tree.mp4","water.mp4"];
+function setup() {
+  createCanvas(2000, 1333);
+  topLayer = createGraphics(2000, 1333)
+  
+  topLayer.image(img01, 0, 0, 2000, 1333)
+  
+  topLayer.strokeWeight(300);
+  topLayer.blendMode(REMOVE)
+}
 
+function draw() {
+  image(img02, 0, 0, 2000, 1333);
 
-
-// var basic_array = [2,3];
-//
-// console.log(basic_array[0]);
-
-console.log("vid array at index 0 = " + vid_array[0]) // DOES NOT EXIST
-
-  var i = 0
-  var new_vid = vid_array[i];
-
-  $('#video_link').click(function(event) {
-
-
-    $('#video_tag').get(0).pause();
-    $('#'+sourceID).attr('src', new_vid);
-    $('#'+videoID).get(0).load();
-    i += 1;
-    new_vid = vid_array[i];
-    console.log(i)
-    console.log(new_vid);
-
-
-console.log( "ready!" );
-
-
-    function init() {
-              Papa.parse('https://docs.google.com/spreadsheets/d/e/2PACX-1vSW4eF8jVfz435STbW_ofGgk5DWXtZZyxN1PEixwt3ah_1D3Hg1a2CREv3BbbZN23hsI9eJqqsRCuGR/pub?output=csv', {
-                download: true,
-                header: false,
-                complete: function(results) {
-                  var data = results.data
-                  console.log(data)
-
-                  // Put every timestamp in a div
-                  // for (var entry of data) {
-                  //     console.log(entry.Timestamp);
-                  //     $( ".my-fun-class" ).append( "<p>"+ entry.Timestamp +"</p>" );
-                  // }
-
-
-
-                  for (var entry of data) {
-                      //note that it's not as simple to address this value becuase the name of it is not very machine readable, unlike "Timestamp." The name of it is "What ways do you like to invite someone to do something with you?." This can't be used in the same way becuase of all the spaces and punctuation so we need to address it by referring to is as the second key of each object (remember second looks like [1]) for each entry object.
-                      var invitationResponse = entry[Object.keys(entry)[1]]
-                      console.log(invitationResponse)
-                      $( ".my-fun-class" ).append( "<p>"+ invitationResponse +"</p>" );
-                  }
-
-
-                  //// This is the original table code that displays the data similar to the way the spreadsheet looks using a table library
-                  // var options = {
-                  //     element: document.getElementById("table"),
-                  //     data: data
-                  // };
-                  //
-                  // var table = new Table(options);
-                  // table.view();
-
-                }
-              })
-            }
-
-
-});
-
+  if(mouseIsPressed) {
+    topLayer.line(pmouseX, pmouseY, mouseX, mouseY);
+  }
+  
+  image(topLayer, 0, 0)
+}
