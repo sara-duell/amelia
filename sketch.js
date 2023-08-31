@@ -7,17 +7,17 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(2000, 1333);
-  topLayer = createGraphics(2000, 1333)
+  createCanvas(1440, 960);
+  topLayer = createGraphics(1440, 960)
   
-  topLayer.image(img01, 0, 0, 2000, 1333)
+  topLayer.image(img01, 0, 0, 1440, 960)
   
   topLayer.strokeWeight(300);
   topLayer.blendMode(REMOVE)
 }
 
 function draw() {
-  image(img02, 0, 0, 2000, 1333);
+  image(img02, 0, 0, 1440, 960);
 
   if(mouseIsPressed) {
     topLayer.line(pmouseX, pmouseY, mouseX, mouseY);
