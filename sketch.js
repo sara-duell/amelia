@@ -7,7 +7,6 @@ function preload() {
 }
 
 function setup() {
-    createMetaTag();
 	createCanvas(1440, 960);  
     topLayer = createGraphics(1440, 960)
   
@@ -26,14 +25,6 @@ function draw() {
   }
   
   image(topLayer, 0, 0)
-}
-function createMetaTag() {
-	let meta = createElement('meta');
-	meta.attribute('name', 'viewport');
-	meta.attribute('content', 'user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width,height=device-height');
-
-	let head = select('head');
-	meta.parent(head);
 }
 
 }
