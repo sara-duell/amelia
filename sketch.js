@@ -16,6 +16,7 @@ function setup() {
   topLayer.blendMode(REMOVE)
 }
 
+
 function draw() {
   image(img02, 0, 0, 1440, 960);
 
@@ -24,4 +25,12 @@ function draw() {
   }
   
   image(topLayer, 0, 0)
+}
+
+function windowResized() { 
+    if(windowWidth < 550) {
+        size = 10;
+    } else {
+        size = 100;
+    }
 }
