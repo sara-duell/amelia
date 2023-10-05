@@ -8,12 +8,12 @@ function preload() {
 
 function setup() {
 	createCanvas(1440, 960);  
-    topLayer = createGraphics(1440, 960)
+    topLayer = createGraphics(1440, 960);
   
-  topLayer.image(img01, 0, 0, 1440, 960)
+  topLayer.image(img01, 0, 0, 1440, 960);
   
   topLayer.strokeWeight(300);
-  topLayer.blendMode(REMOVE)
+  topLayer.blendMode(REMOVE);
 }
 
 
@@ -24,7 +24,7 @@ function draw() {
     topLayer.line(pmouseX, pmouseY, mouseX, mouseY);
   }
   
-  image(topLayer, 0, 0)
+  image(topLayer, 0, 0);
 }
 
 }
