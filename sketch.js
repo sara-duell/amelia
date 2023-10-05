@@ -29,8 +29,8 @@ function draw() {
 
 function windowResized() { 
     if(windowWidth < 550) {
-        size = 10;
-    } else {
-        size = 100;
-    }
+        resizeCanvas(1080, 2340);
+    } 
+
+
 }
