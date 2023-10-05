@@ -8,8 +8,8 @@ function preload() {
 
 function setup() {
     createMetaTag();
-	createCanvas(window.innerWidth, window.innerHeight);  
-    topLayer = createGraphics(window.innerWidth, window.innerHeight)
+	createCanvas(1440, 960);  
+    topLayer = createGraphics(1440, 960)
   
   topLayer.image(img01, 0, 0, 1440, 960)
   
