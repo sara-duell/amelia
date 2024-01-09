@@ -43,7 +43,7 @@ function preload() {
   function setup () {
 noCanvas();
     // console.log(txt);
-createP(join (txt, "<br/>")).parent('intro');
+createP(join (txt, "<br/>")).parent('writing');
   }
 
 
