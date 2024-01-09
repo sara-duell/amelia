@@ -32,13 +32,12 @@ div.bio {
   overflow-x:hidden;
   overflow-y:thin;
   border:0px solid #FFFFFF;
-  overw:auto;}
-
+  overw:auto;
 .prevent-select {
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
-}
+}}
 
 p.more{ font:25px BBB Poppins TN; Sans Serif;
 }
