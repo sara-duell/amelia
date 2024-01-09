@@ -1,7 +1,110 @@
 html, body {
+  background-image: url("fog1.jpg");
   margin: 0;
-  padding: 0;
+  padding: 0::-overflow: hidden;
 }
-canvas {
+div.drawing_board {
   display: block;
+    position:fixed;
+    size:cover;
+    repeat:no-repeat;
+    height:100%
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    z-index:-2}
+
+p{font-family: Adelphe, Garamond, Serif;
+color: #FFFFFF}
+
+p.intro {
+  padding-top: 60%;
+  font-size: 32px;
+  line-height: 39px;
+  font-weight: regular;
+  color:white; }
+
+div.bio {
+  z-index: 1;
+  position: absolute;
+  left: 10%;
+  top: 0%;
+  height:100%;
+  width:80%;
+  overflow:scroll;
+  overflow-x:hidden;
+  overflow-y:thin;
+  border:0px solid #FFFFFF;
+  overw:auto;}
+
+p.more{ font:25px BBB Poppins TN; Sans Serif;
 }
+h1{
+  font-family: "Adelphe", serif;
+  letter-spacing: 0.01rem;
+font-weight: 200;
+  font-size: 30px;
+  line-height: 22px;
+  margin-bottom: 0px;
+ }
+ h2{
+  font-family: "authentic", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  opacity: 0.6;
+ }
+ p.mail {
+  font-family: "authentic", sans-serif;
+ font-size: 12px;
+ line-height: 14px;
+ opacity: 0.6;
+}
+p.credits {
+  font-family: "Adelphe", serif;
+  margin-top: 30px;
+ font-size: 12px;
+ line-height: 15px;
+}
+p.writings {
+  font-family: "Adelphe", serif;
+  font-weight: 100;
+  letter-spacing: 0rem;
+  font-size: 17px;
+  letter-spacing: 0.02rem;
+  line-height: 21px;
+  margin-bottom: 5px;
+
+ }
+ span.source {
+  font-family: "authentic", sans-serif;
+  letter-spacing: 0.01rem;
+  font-size: 12px;
+  opacity: 0.6;
+  
+ }
+ span.bold {
+  font-family: "authentic", sans-serif;
+  letter-spacing: 0.03rem;
+  opacity: 0.6;
+
+  font-size: 10px;
+ }
+
+ a:link,  a:visited, a:active {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+ }
+
+ a:hover {
+  color:  rgba(0, 11, 32, 0.828);
+  text-decoration: none;
+  background-color:rgba(255, 255, 255, 0.1);
+  border-bottom: none;
+ }
+ 
+
+::-webkit-scrollbar {
+  display: none;
+}
+
