@@ -2,8 +2,8 @@ let img01, img02;
 let topLayer;
 
 function preload() {
-    img01 = loadImage('fog1.jpg');
-    img02 = loadImage('fog2.jpg');
+    img01 = loadImage('sorrel1.jpg');
+    img02 = loadImage('sorrel2.jpg');
 }
 
 function setup() {
