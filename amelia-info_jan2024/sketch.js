@@ -1,9 +1,6 @@
-
- 
-
-
 let img01, img02;
 let topLayer;
+var txt;
 
 function preload() {
     img01 = loadImage('sorrel1.jpg');
