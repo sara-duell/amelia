@@ -1,4 +1,6 @@
 
+ 
+
 
 let img01, img02;
 let topLayer;
@@ -6,6 +8,8 @@ let topLayer;
 function preload() {
     img01 = loadImage('sorrel1.jpg');
     img02 = loadImage('sorrel2.jpg');
+	txt = loadStrings("writings.txt");
+
 }
 
 function setup() {
@@ -16,6 +20,11 @@ function setup() {
   topLayer.image(img01, 0, 0, displayWidth, displayHeight)
   topLayer.strokeWeight(100);
   topLayer.blendMode(REMOVE)
+
+noCanvas();
+    // console.log(txt);
+createP(join (txt, "<br/>")).parent('writing');
+  
 }
 
 function draw() {
