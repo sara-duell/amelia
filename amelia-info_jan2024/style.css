@@ -17,6 +17,7 @@ html, body {
   font-family: "Adelphe-ital";
   src: url(Adelphe-GerminalItalic.woff);
 }
+/* 
 .wrap{
 background-image: url("fog1.jpg");
 position: fixed;
@@ -38,6 +39,7 @@ overflow: hidden;
   mix-blend-mode: multiply;
   
   }
+*/
 canvas {
   display: block;
   position: absolute;
