@@ -13,6 +13,7 @@ div.drawing_board {
     position: fixed;
     right: 0;
     top: 0;
+    object-position: center bottom;
     -o-object-fit: cover;
     object-fit: cover;
     z-index:-2; }
