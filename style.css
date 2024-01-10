@@ -5,7 +5,9 @@ html, body {
   height:100%;
   width:100%;
   color: rgb(255, 255, 255);
+  z-index:-3;
 }
+
 div.drawing_board {
     display: block;
     margin: auto;
