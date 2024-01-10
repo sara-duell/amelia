@@ -10,7 +10,7 @@ function setup() {
   createCanvas(displayWidth, displayHeight);
   topLayer = createGraphics(displayWidth, displayHeight)
   
-  topLayer.image(img01, 0, 0, 2000, 1333)
+  topLayer.image(img01, 0, 0, 4000, 2666)
   
   topLayer.strokeWeight(300);
   topLayer.blendMode(REMOVE)
