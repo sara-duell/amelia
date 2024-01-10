@@ -1,6 +1,10 @@
 html, body {
   margin: 0;
   padding: 0::-overflow: hidden;
+  background-color: rgb(122, 192, 242);
+  height:100%;
+  width:100%;
+  color: rgb(255, 255, 255);
 }
 div.drawing_board {
     display: block;
