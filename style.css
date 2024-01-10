@@ -8,6 +8,27 @@ html, body {
   z-index:-3;
 }
 
+nav {
+    position:absolute;
+    display: flex;
+    justify-content: flex-end;
+    height: auto;
+    z-index: 10;
+  
+  }
+  .fullmoon {
+    height: 30px;
+    width: 30px;
+    padding-bottom: 50px;
+    opacity: 0.7;
+    margin-top: 30px;
+    margin-left: 30px;
+    
+  }
+
+  .moon:hover{
+    background-color:rgba(255, 255, 255, 0);
+    }
 div.drawing_board {
     display: block;
     margin: auto;
