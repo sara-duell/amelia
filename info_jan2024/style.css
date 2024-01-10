@@ -1,5 +1,5 @@
 html, body {
-  background-color: black;
+  background-color: rgb(122, 192, 242);
   margin: 0;
   padding: 0;
   height:100%;
@@ -24,36 +24,48 @@ html, body {
 
 .wrap{
 background-image: url("fog1.jpg");
-position: absolute;
+position: fixed;
 margin: 0;
 padding: 0;
-height:100%;
+height:110%;
 width:100%;
 overflow: hidden;
 z-index: 1;
 }
+
 .wrap::before{
   content: ""; 
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 400%;
+  min-height: 100%;
   background: rgba(0, 47, 142, 0.828);
   opacity: .8;
   mix-blend-mode: multiply;
   z-index: 1;
-  
   }
   
   .nav {
     position:absolute;
-    z-index: 5;
-    height: 100px;
-    padding-left: 20px;
-    padding-top: 20px;
-    opacity: 0.5;
+    display: block;
+    height: auto;
+    z-index: 10;
+  
   }
+  .moon {
+    height: 30px;
+    width: 30px;
+    padding-bottom: 50px;
+    opacity: 0.7;
+    margin-top: 30px;
+    margin-left: 30px;
+    
+  }
+
+  .moon:hover{
+    background-color:rgba(255, 255, 255, 0);
+    }
 
 canvas {
   display: block;
@@ -72,6 +84,7 @@ canvas {
   justify-content: center;
   align-items: center;
   z-index: 3;
+  margin-top: 10px;
 }
 .text {
   width: 35%;
@@ -139,12 +152,21 @@ p.writings {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
  }
 
- a:hover {
+ .writinglink:hover {
   color:  rgba(0, 11, 32, 0.828);
   text-decoration: none;
   background-color:rgba(255, 255, 255, 0.1);
   border-bottom: none;
  }
+
+ .credit:hover {
+  color:  rgba(0, 11, 32, 0.828);
+  text-decoration: none;
+  background-color:rgba(255, 255, 255, 0.1);
+  border-bottom: none;
+ }
+
+ 
 
 @media(max-width:880px){
   html, body {
@@ -159,6 +181,7 @@ overflow: scroll;
     padding: 5px;
     flex-direction:column-reverse;
     align-items:center;
+    margin-top: 50px;
   }
   .portrait-desktop {
     display:none;
@@ -167,9 +190,24 @@ overflow: scroll;
     display:block;
   }
   img {
-    width:50%;
+    width:40%;
   }
   .text {
     width: 90%;
   }
+  .nav {
+    position:flex;
+    z-index: 5;
+    height: 200px;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+    opacity: 0.5;
+  }
+  
+.moon  {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
 }

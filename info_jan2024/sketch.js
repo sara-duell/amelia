@@ -16,6 +16,22 @@ function setup() {
   topLayer.blendMode(REMOVE)
 }
 
+var txt;
+function preload() {
+    txt = loadStrings("writings.txt");
+  }
+
+  function setup () {
+noCanvas();
+    // console.log(txt);
+createP(join (txt, "<br/>")).parent('writing');
+  }
+
+
+  
+
+
+
 function draw() {
   image(img02, 0, 0, displayWidth, displayHeight);
 
