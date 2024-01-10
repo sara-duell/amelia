@@ -3,7 +3,7 @@ let topLayer;
 
 function preload() {
     img01 = loadImage("fog1.jpg");
-    img02 = loadImage("fog2.jpg");
+    img02 = loadImage("fog2a.jpg");
 }
 
 function setup() {
