@@ -4,10 +4,6 @@ html, body {
 }
 div.drawing_board {
     display: block;
-    width: 100%;
-    height: auto;
-    bottom: 0;
-    left: 0;
     margin: auto;
     overflow: auto;
     position: fixed;
