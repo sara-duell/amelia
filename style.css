@@ -6,7 +6,6 @@ html, body {
   width:100%;
   z-index:-3;
 }
-/* <!--- I am a comment
 nav {
     position:absolute;
     display: flex;
@@ -29,7 +28,8 @@ nav {
 
   .moon:hover{
     background-color: transparent;
-    } ---!> */
+    }
+
 div.drawing_board {
     display: block;
     margin: auto;
