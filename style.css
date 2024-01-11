@@ -76,7 +76,9 @@ div.bio {
   -ms-user-select: none;
 }
 
-p.more{ font:25px BBB Poppins TN; Sans Serif;
+p.more{ 
+  font:25px BBB Poppins TN; Sans Serif;
+  padding-bottom: 20%;
 }
 h1{
   font-family: "Adelphe", serif;
@@ -85,8 +87,7 @@ font-weight: 200;
   font-size: 30px;
   line-height: 22px;
   margin-bottom: 0px;
-  padding-bottom: 20%;
- }
+}
  h2{
   font-family: "authentic", sans-serif;
   font-size: 12px;
