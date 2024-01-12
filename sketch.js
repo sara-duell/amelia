@@ -12,7 +12,7 @@ function setup() {
   
   topLayer.image(img01, 0, 0, displayWidth, displayHeight)
   
-  topLayer.strokeWeight(300);
+  topLayer.strokeWeight(100);
   topLayer.blendMode(REMOVE)
 }
 
