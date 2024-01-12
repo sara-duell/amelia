@@ -9,7 +9,7 @@ html, body {
   .nav {
     position:absolute;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     height: auto;
     z-index: 10;
     background-color: transparent;
