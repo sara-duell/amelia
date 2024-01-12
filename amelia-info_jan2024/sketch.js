@@ -10,14 +10,15 @@ function preload() {
 }
 
 function setup() {
-  createMetaTag();
+  //createMetaTag();
   createCanvas(displayWidth, displayHeight);
   topLayer = createGraphics(displayWidth, displayHeight)
   
   topLayer.image(img01, 0, 0, displayWidth, displayHeight)
   topLayer.strokeWeight(100);
   topLayer.blendMode(REMOVE)
-    // console.log(txt);
+ 
+    console.log(txt);
 createP(join (txt, "<br/>")).parent('intro');
 }
 
