@@ -21,7 +21,7 @@ html, body {
   src: url(type/Adelphe-GerminalItalic.woff);
 }
 
-
+/*
 .wrap{
 background-image: url("images/fog1.jpg");
 position: fixed;
@@ -45,7 +45,7 @@ z-index: 1;
   mix-blend-mode: multiply;
   z-index: 1;
   }
-  
+  */
   .nav {
     position:absolute;
     display: flex;
