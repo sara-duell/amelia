@@ -18,7 +18,7 @@ function setup() {
   topLayer.strokeWeight(100);
   topLayer.blendMode(REMOVE)
     // console.log(txt);
-createP(join (txt, "<br/>")).parent('writing');
+createP(join (txt, "<br/>")).parent('intro');
 }
 
 function draw() {
