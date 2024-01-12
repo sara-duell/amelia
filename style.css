@@ -139,11 +139,11 @@ p.writings {
   font-size: 10px;
  }
 
-/* a:link,  a:visited, a:active {
+ a:link,  a:visited, a:active {
   color: rgb(255, 255, 255);
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4); 
- } */
+ } 
 
  a:hover {
   color:  rgba(0, 11, 32, 0.828);
