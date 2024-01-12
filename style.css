@@ -6,7 +6,7 @@ html, body {
   width:100%;
   z-index:-3;
 }
-  nav {
+  .nav {
     position:absolute;
     display: flex;
     justify-content: flex-end;
