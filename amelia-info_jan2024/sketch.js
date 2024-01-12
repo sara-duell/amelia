@@ -1,9 +1,12 @@
 let img01, img02;
 let topLayer;
+var txt;
+
 
 function preload() {
     img01 = loadImage('fog1.jpg');
     img02 = loadImage('fog2.jpg');
+     txt = loadStrings("writings.txt");
 }
 
 function setup() {
@@ -14,23 +17,9 @@ function setup() {
   topLayer.image(img01, 0, 0, displayWidth, displayHeight)
   topLayer.strokeWeight(100);
   topLayer.blendMode(REMOVE)
-}
-
-var txt;
-function preload() {
-    txt = loadStrings("writings.txt");
-  }
-
-  function setup () {
-noCanvas();
     // console.log(txt);
 createP(join (txt, "<br/>")).parent('writing');
-  }
-
-
-  
-
-
+}
 
 function draw() {
   image(img02, 0, 0, displayWidth, displayHeight);
