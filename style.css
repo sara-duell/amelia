@@ -160,3 +160,95 @@ p.writings {
   display: none;
 }
 
+@media(max-width:880px){
+  html, body {
+   /* background-image:url("images/fog1.jpg") ; */
+    margin: 0;
+    padding: 0;
+    height:100%;
+    width:100%;
+overflow: scroll;
+  }
+  .content{
+    padding: 10px;
+    position:relative;
+    display: flex;
+    flex-direction:column-reverse;
+    align-items:center;
+    margin-top: 0px;
+  }
+  .portrait-desktop {
+    display:none;
+  }
+  .portrait-mobile {
+    display:block;
+  }
+  img {
+    width:80%;
+  }
+  .text {
+    width: 90%;
+  }
+  .nav {
+    position:relative;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 5;
+    height: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    margin-bottom: 30px;
+    opacity: 0.5;
+  }
+  
+.moon  {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+  h1{
+  font-size: 30px;
+  line-height: 22px;
+  margin-bottom: 0px;
+ }
+ h2{
+  font-family: "authentic", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  opacity: 0.6;
+ }
+ p.mail {
+ font-size: 14px;
+ line-height: 16px;
+}
+p.credits {
+  font-family: "Adelphe", serif;
+  margin-top: 30px;
+ font-size: 16px;
+ line-height: 18px;
+}
+p {
+  font-family: "Adelphe", serif;
+  font-weight: 100;
+  letter-spacing: 0rem;
+  font-size: 20px;
+  letter-spacing: 0.02rem;
+  line-height: 23px;
+  margin-bottom: 5px;
+
+ }
+ span.source {
+  font-family: "authentic", sans-serif;
+  letter-spacing: 0.01rem;
+  font-size: 14px;
+  opacity: 0.6;
+  
+ }
+ span.bold {
+  font-family: "authentic", sans-serif;
+  letter-spacing: 0.03rem;
+  opacity: 0.6;
+  font-size: 14px;
+ }
+}
+
