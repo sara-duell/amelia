@@ -29,8 +29,16 @@ html, body {
   .moon:hover{
     background-color: transparent;
     }
-
-div.drawing_board {
+canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+/*div.drawing_board {
     display: block;
     margin: auto;
     overflow: auto;
@@ -40,7 +48,7 @@ div.drawing_board {
     object-position: center bottom;
     -o-object-fit: cover;
     object-fit: cover;
-    z-index:-2; }
+    z-index:-2; }*/
 
 p{font-family: Adelphe, Garamond, Serif;
 color: #FFFFFF; }
