@@ -6,16 +6,13 @@ html, body {
   width:100%;
   z-index:-3;
 }
-  .nav {
-    position:relative;
+ nav {
+    position:absolute;
     display: flex;
     justify-content: flex-end;
-    z-index: 5;
-    height: 0px;
-    padding-left: 0px;
-    padding-top: 0px;
-    margin-bottom: 30px;
-    opacity: 0.5;
+    height: auto;
+    z-index: 10;
+    background-color: transparent;
   
   }
   .fullmoon {
