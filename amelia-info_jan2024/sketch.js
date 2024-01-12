@@ -4,8 +4,8 @@ var txt;
 
 
 function preload() {
-    img01 = loadImage('fog1.jpg');
-    img02 = loadImage('fog2.jpg');
+    img01 = loadImage('images/fog1.jpg');
+    img02 = loadImage('images/fog2.jpg');
      txt = loadStrings("writings.txt");
 }
 
