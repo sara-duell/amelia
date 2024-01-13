@@ -71,6 +71,8 @@ div.bio {
   height:100%;
   width:70%;
   left: 15%;
+  padding-top: 70%;
+  padding-bottom: 20%;
   overflow:scroll;
   overflow-x:hidden;
   overflow-y:thin;
