@@ -56,12 +56,6 @@ canvas {
 p{font-family: Adelphe, Garamond, Serif;
 color: #FFFFFF; }
 
-p.intro {
-  font-size: 32px;
-  line-height: 39px;
-  font-weight: regular;
-  color:white; }
-
 div.bio {
   z-index: 2;
   position: absolute;
@@ -71,13 +65,19 @@ div.bio {
   height:100%;
   width:70%;
   left: 15%;
-  padding-top: 70%;
-  padding-bottom: 20%;
   overflow:scroll;
   overflow-x:hidden;
   overflow-y:thin;
   border:0px solid #FFFFFF;
   overw:auto; }
+
+p.intro {
+  font-size: 32px;
+  line-height: 39px;
+  font-weight: regular;
+  color:white;
+  padding-top: 70%;
+  padding-bottom: 20%;}
 
 /* Disable text selection  */
 .bio {
