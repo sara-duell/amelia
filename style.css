@@ -6,6 +6,18 @@ html, body {
   width:100%;
  
 }
+@font-face {
+  font-family: "authentic";
+  src: url(type/BBBPoppinsTN-TextRegular.woff);
+}
+@font-face {
+  font-family: "Adelphe";
+  src: url(type/Adelphe-GerminalRegular.woff2);
+}
+@font-face {
+  font-family: "Adelphe-ital";
+  src: url(type/Adelphe-GerminalItalic.woff);
+}
   .nav {
     position:absolute;
     display: flex;
