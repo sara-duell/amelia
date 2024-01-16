@@ -19,7 +19,7 @@ function setup() {
   topLayer.blendMode(REMOVE)
  
     console.log(txt);
-createP(join (txt, "<br/>")).parent('intro');
+createP(join (txt, "")).parent('intro');
 }
 
 function draw() {

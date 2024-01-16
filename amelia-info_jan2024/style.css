@@ -1,5 +1,5 @@
 html, body {
-  /*background-color: rgb(122, 192, 242);*/
+  background-color: rgb(23, 0, 80);
   margin: 0;
   padding: 0;
   height:100%;
@@ -25,31 +25,6 @@ html, body {
   src: url(type/Adelphe-GerminalItalic.woff);
 }
 
-/*
-.wrap{
-background-image: url("images/fog1.jpg");
-position: fixed;
-margin: 0;
-padding: 0;
-height:110%;
-width:100%;
-overflow: hidden;
-z-index: 1;
-}
-
-.wrap::before{
-  content: ""; 
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 100%;
-  background: rgba(0, 47, 142, 0.828);
-  opacity: .8;
-  mix-blend-mode: multiply;
-  z-index: 1;
-  }
-  */
   .nav {
     position:absolute;
     display: flex;
@@ -71,10 +46,11 @@ z-index: 1;
   .moon:hover{
     background-color:rgba(255, 255, 255, 0);
     }
-.moonlink:link,.moonlink:visted, .moonlink:active  {
+  .moonlink:link, .moonlink:visited, .moonlink:active  {
     text-decoration: none;
     border-bottom: 0px;
     }
+
 canvas {
   display: block;
   position: absolute;
@@ -107,28 +83,34 @@ canvas {
 h1{
   font-family: "Adelphe", serif;
   letter-spacing: 0.01rem;
-font-weight: 200;
+  font-weight: 200;
   font-size: 30px;
   line-height: 22px;
   margin-bottom: 0px;
+  padding-bottom: 0px;
  }
  h2{
   font-family: "authentic", sans-serif;
   font-size: 12px;
   line-height: 14px;
-  opacity: 0.6;
+  opacity: 0.7;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
  }
  p.mail {
   font-family: "authentic", sans-serif;
  font-size: 12px;
  line-height: 14px;
- opacity: 0.6;
+ opacity: 0.7;
+ margin-top: 10px;
 }
 p.credits {
   font-family: "Adelphe", serif;
   margin-top: 30px;
  font-size: 12px;
  line-height: 15px;
+ letter-spacing: 0.01rem;
+ opacity:0.7;
 }
 p {
   font-family: "Adelphe", serif;
@@ -138,6 +120,7 @@ p {
   letter-spacing: 0.02rem;
   line-height: 21px;
   margin-bottom: 5px;
+  margin-top: 0px;
 
  }
  span.source {
@@ -151,7 +134,7 @@ p {
   font-family: "authentic", sans-serif;
   letter-spacing: 0.02rem;
   opacity: 0.6;
-  font-size: 11px;
+  font-size: 10px;
  }
 
  a:link,  a:visited, a:active {
@@ -161,12 +144,15 @@ p {
  }
 
  .writinglink:hover, .credit:hover  {
-  color:  rgba(0, 11, 32, 0.828);
+  color:  rgb(255, 255, 255);
   text-decoration: none;
-  background-color:rgba(255, 255, 255, 0.2);
+  background-color:rgba(171, 219, 254, 0.2);
   border-bottom: none;
  }
- 
+ .intro {
+  margin-top:0px;
+  padding-top:0px;
+ }
 
 @media(max-width:880px){
   html, body {
@@ -232,8 +218,8 @@ overflow: scroll;
 p.credits {
   font-family: "Adelphe", serif;
   margin-top: 30px;
- font-size: 16px;
- line-height: 18px;
+ font-size: 15px;
+ line-height: 19px;
 }
 p {
   font-family: "Adelphe", serif;
@@ -256,6 +242,6 @@ p {
   font-family: "authentic", sans-serif;
   letter-spacing: 0.03rem;
   opacity: 0.6;
-  font-size: 14px;
+  font-size: 13px;
  }
 }
