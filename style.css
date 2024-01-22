@@ -266,14 +266,16 @@ div.bio {
      font-family: "Adelphe", serif;
      margin-top: 30px;
      font-size: 18px;
-     line-height: 20px;
+     line-height: 18px;
      position: relative; top: 40%;
 
     }
     p.more {
       font-family: "authentic", Sans Serif;
       font-size: 14px;
-      margin-top: 30px;
+      position: relative;
+      padding-top: 20%;
+      padding-bottom: 20%;
     }
 
  span.source {
