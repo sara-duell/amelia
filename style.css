@@ -234,11 +234,15 @@ overflow: scroll;
  font-size: 14px;
  line-height: 16px;
 }
-p.credits {
+p.intro {
   font-family: "Adelphe", serif;
   margin-top: 30px;
- font-size: 16px;
- line-height: 18px;
+ font-size: 18px;
+ line-height: 20px;
+}
+  p.more {
+  font-family: "BBB Poppins TN", Sans Serif;
+    font-size: 14px;
 }
 p {
   font-family: "Adelphe", serif;
