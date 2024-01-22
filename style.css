@@ -231,21 +231,7 @@ p.writings {
   margin-top: 10px;
   margin-right: 30px;
 }
-  h1{
-  font-size: 30px;
-  line-height: 22px;
-  margin-bottom: 0px;
- }
- h2{
-  font-family: "authentic", sans-serif;
-  font-size: 12px;
-  line-height: 14px;
-  opacity: 0.6;
- }
- p.mail {
- font-size: 14px;
- line-height: 16px;
-}
+ 
 p.intro {
   font-family: "Adelphe", serif;
   margin-top: 30px;
@@ -255,17 +241,9 @@ p.intro {
   p.more {
   font-family: "BBB Poppins TN", Sans Serif;
     font-size: 14px;
+      margin-top: 30px;
 }
-p {
-  font-family: "Adelphe", serif;
-  font-weight: 100;
-  letter-spacing: 0rem;
-  font-size: 20px;
-  letter-spacing: 0.02rem;
-  line-height: 23px;
-  margin-bottom: 5px;
 
- }
  span.source {
   font-family: "authentic", sans-serif;
   letter-spacing: 0.01rem;
