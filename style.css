@@ -181,18 +181,18 @@ p.writings {
     height:100%;
     width:100%;
     overflow: hidden;
+   }
+  @font-face {
+    font-family: "authentic";
+    src: url(fonts/BBBPoppinsTN-TextRegular.woff);
   }
   @font-face {
-  font-family: "authentic";
-  src: url(type/BBBPoppinsTN-TextRegular.woff);
+    font-family: "Adelphe";
+    src: url(fonts/Adelphe-GerminalRegular.woff2);
   }
   @font-face {
-  font-family: "Adelphe";
-  src: url(type/Adelphe-GerminalRegular.woff2);
-  }
-  @font-face {
-  font-family: "Adelphe-ital";
-  src: url(type/Adelphe-GerminalItalic.woff);
+    font-family: "Adelphe-ital";
+    src: url(fonts/Adelphe-GerminalItalic.woff);
   }
   .content{
     padding: 10px;
