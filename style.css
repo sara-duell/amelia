@@ -264,6 +264,8 @@ div.bio {
      margin-top: 30px;
      font-size: 18px;
      line-height: 20px;
+     position: relative; top: 40%;
+
     }
     p.more {
       font-family: "BBB Poppins TN", Sans Serif;
