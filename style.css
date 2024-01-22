@@ -9,15 +9,15 @@ html, body {
 }
 @font-face {
   font-family: "authentic";
-  src: url(type/BBBPoppinsTN-TextRegular.woff);
+  src: url(fonts/BBBPoppinsTN-TextRegular.woff);
 }
 @font-face {
   font-family: "Adelphe";
-  src: url(type/Adelphe-GerminalRegular.woff2);
+  src: url(fonts/Adelphe-GerminalRegular.woff2);
 }
 @font-face {
   font-family: "Adelphe-ital";
-  src: url(type/Adelphe-GerminalItalic.woff);
+  src: url(fonts/Adelphe-GerminalItalic.woff);
 }
   .nav {
     position:absolute;
