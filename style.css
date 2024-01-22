@@ -164,7 +164,7 @@ p.writings {
  .writinglink:hover, .credit:hover  {
   color:  rgba(0, 11, 32, 0.828);
   text-decoration: none;
-  background-color:rgba(255, 255, 255, 0.2);
+  background-color:rgba(255, 255, 255, 0.4);
   border-bottom: none;
  }
  
