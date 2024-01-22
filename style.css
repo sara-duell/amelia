@@ -89,7 +89,7 @@ p.intro {
   line-height: 39px;
   font-weight: regular;
   color:white;
-  padding-top: 15%;
+  position: relative; top: 20%;
   padding-bottom: 20%;}
 
 /* Disable text selection  */
