@@ -183,8 +183,8 @@ p.writings {
     padding: 0;
     height:100%;
     width:100%;
-    overflow: hidden;
-   }
+overflow: scroll;
+  }
   @font-face {
     font-family: "authentic";
     src: url(fonts/BBBPoppinsTN-TextRegular.woff);
