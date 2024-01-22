@@ -69,6 +69,7 @@ canvas {
 p{font-family: Adelphe, Garamond, Serif;
 color: #FFFFFF; }
 
+
 div.bio {
   z-index: 2;
   position: absolute;
@@ -84,14 +85,6 @@ div.bio {
   border:0px solid #FFFFFF;
   overw:auto; }
 
-p.intro {
-  font-size: 32px;
-  line-height: 39px;
-  font-weight: regular;
-  color:white;
-  position: relative; top: 40%;
-  padding-bottom: 20%;}
-
 /* Disable text selection  */
 .bio {
   user-select: none;
@@ -100,8 +93,17 @@ p.intro {
   -ms-user-select: none;
 }
 
+p.intro {
+  font-size: 32px;
+  line-height: 39px;
+  font-weight: regular;
+  color:white;
+  position: relative; top: 40%;
+  padding-bottom: 20%;}
+
 p.more{ 
   font:25px BBB Poppins TN; Sans Serif;
+  position: relative;
   padding-top: 20%;
   padding-bottom: 20%;
 }
