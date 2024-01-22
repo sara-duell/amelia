@@ -233,16 +233,19 @@ overflow: scroll;
   margin-left: 10px;
   margin-top: 10px;
   margin-right: 30px;
-}
-  canvas {
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-}
+} 
+  
+h1{
+  font-size: 30px;
+  line-height: 22px;
+  margin-bottom: 0px;
+ }
+ h2{
+  font-family: "authentic", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  opacity: 0.6;
+ }
 
 p{font-family: Adelphe, Garamond, Serif;
 color: #FFFFFF; }
