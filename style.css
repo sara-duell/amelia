@@ -191,7 +191,6 @@ overflow: hidden;
   z-index: 3;
   width:80%;
   left: 5%;
-  position: relative; top: 40%;
    
   } 
 
@@ -201,6 +200,7 @@ overflow: hidden;
     margin-top: 30px;
     font-size: 18px;
     line-height: 20px;
+    position: relative; top: 40%;
     }
   p.more {
     font-family: "authentic", Sans Serif;
@@ -220,18 +220,5 @@ overflow: hidden;
     color: #FFFFFF; 
 
 }
- span.source {
-  font-family: "authentic", sans-serif;
-  letter-spacing: 0.01rem;
-  font-size: 14px;
-  opacity: 0.6;
-  
- }
- span.bold {
-  font-family: "authentic", sans-serif;
-  letter-spacing: 0.03rem;
-  opacity: 0.6;
-  font-size: 14px;
- }
 }
 
