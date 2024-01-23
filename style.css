@@ -134,7 +134,7 @@ p.more{
     padding: 0;
     height:100%;
     width:100%;
-overflow: scroll;
+overflow: hidden;
   }
  /* @font-face {
     font-family: "authentic";
