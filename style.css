@@ -136,18 +136,6 @@ p.more{
     width:100%;
 overflow: hidden;
   }
- /* @font-face {
-    font-family: "authentic";
-    src: url(fonts/BBBPoppinsTN-TextRegular.woff);
-  }
-  @font-face {
-    font-family: "Adelphe";
-    src: url(fonts/Adelphe-GerminalRegular.woff2);
-  }
-  @font-face {
-    font-family: "Adelphe-ital";
-    src: url(fonts/Adelphe-GerminalItalic.woff);
-  } */
   .content{
     padding: 10px;
     position:relative;
@@ -186,15 +174,13 @@ overflow: hidden;
   margin-right: 30px;
 } 
 
-
  div.bio {
   z-index: 3;
   width:80%;
   left: 5%;
-   
   } 
 
- 
+
   p.intro {
     font-family: "Adelphe", serif;
     margin-top: 30px;
