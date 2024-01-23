@@ -185,7 +185,7 @@ p.writings {
     width:100%;
 overflow: scroll;
   }
-  @font-face {
+ /* @font-face {
     font-family: "authentic";
     src: url(fonts/BBBPoppinsTN-TextRegular.woff);
   }
@@ -196,7 +196,7 @@ overflow: scroll;
   @font-face {
     font-family: "Adelphe-ital";
     src: url(fonts/Adelphe-GerminalItalic.woff);
-  }
+  } */
   .content{
     padding: 10px;
     position:relative;
@@ -235,7 +235,7 @@ overflow: scroll;
   margin-right: 30px;
 } 
   
-h1{
+  h1{
   font-size: 30px;
   line-height: 22px;
   margin-bottom: 0px;
@@ -247,10 +247,9 @@ h1{
   opacity: 0.6;
  }
 
-p{font-family: Adelphe, Garamond, Serif;
-color: #FFFFFF; }
+}
 
-div.bio {
+/* div.bio {
   z-index: 3;
   position: absolute;
   margin-left: auto;
@@ -263,24 +262,34 @@ div.bio {
   overflow-x:hidden;
   overflow-y:thin;
   border:0px solid #FFFFFF;
-  overw:auto; }
+  overw:auto; } */
  
-    p.intro {
-     font-family: "Adelphe", serif;
-     margin-top: 30px;
-     font-size: 18px;
-     line-height: 18px;
-     position: relative; top: 40%;
+  p.intro {
+    font-family: "Adelphe", serif;
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 18px;
+    position: relative; top: 40%;
 
     }
-    p.more {
-      font-family: "authentic", Sans Serif;
-      font-size: 14px;
-      position: relative;
-      padding-top: 20%;
-      padding-bottom: 20%;
-    }
+  p.more {
+    font-family: "authentic", Sans Serif;
+    font-size: 14px;
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+  }
+  p {
+    font-family: "Adelphe", Garamond, Serif;
+    font-weight: 100;
+    letter-spacing: 0rem;
+    font-size: 20px;
+    letter-spacing: 0.02rem;
+    line-height: 23px;
+    margin-bottom: 5px;
+    color: #FFFFFF; 
 
+}
  span.source {
   font-family: "authentic", sans-serif;
   letter-spacing: 0.01rem;
