@@ -55,7 +55,7 @@ canvas {
   z-index: 1;
 }
 
-.bio {
+div.bio {
   z-index: 2;
   position: absolute;
   margin-left: auto;
@@ -71,7 +71,7 @@ canvas {
   }
 
 /* Disable text selection  */
-.bio {
+div.bio {
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -163,7 +163,7 @@ overflow: hidden;
     object-fit: cover;
  } */
 
-.bio {
+div.bio {
   z-index: 3;
   width:90%;
   margin-left: 2%;
