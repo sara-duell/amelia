@@ -70,7 +70,7 @@ p{font-family: Adelphe, Garamond, Serif;
 color: #FFFFFF; }
 
 
-div.bio {
+.bio {
   z-index: 2;
   position: absolute;
   margin-left: auto;
@@ -177,39 +177,30 @@ overflow: hidden;
     object-fit: cover;
  } */
 
- div.bio {
+.bio {
   z-index: 3;
-  width:80%;
-  left: 5%;
+  width:90%;
+  margin-left: 2%;
+  margin-right: 2%;
   } 
 
 
-  p.intro {
+  p {
     font-family: "Adelphe", serif;
     margin-top: 30px;
-    font-size: 18px;
-    line-height: 21px;
-    position: relative; top: 35%;
+    font-size: 26px;
+    line-height: 29px;
+    position: relative; top: 45%;
     padding-bottom: 20%;
     }
   p.more {
-    display:block
+    display:block;
     font-family: "authentic", Sans Serif;
     font-size: 14px;
     position: relative;
     padding-top: 20%;
     padding-bottom: 20%;
   }
-  p {
-    font-family: "Adelphe", Garamond, Serif;
-    font-weight: 100;
-    letter-spacing: 0rem;
-    font-size: 20px;
-    letter-spacing: 0.02rem;
-    line-height: 23px;
-    margin-bottom: 5px;
-    color: #FFFFFF; 
-
-}
+ 
 }
 
