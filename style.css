@@ -54,17 +54,7 @@ canvas {
   right: 0;
   z-index: 1;
 }
-div.drawing_board {
-    display: block;
-    margin: auto;
-    overflow: auto;
-    position: fixed;
-    right: 0;
-    top: 0;
-    object-position: center bottom;
-    /* -o-object-fit: cover; */
-    object-fit: cover;
-    z-index:-2; }
+
 
 p{font-family: Adelphe, Garamond, Serif;
 color: #FFFFFF; }
@@ -83,7 +73,7 @@ color: #FFFFFF; }
   overflow-x:hidden;
   overflow-y:thin;
   border:0px solid #FFFFFF;
-  overw:auto; }
+  }
 
 /* Disable text selection  */
 .bio {
@@ -93,7 +83,7 @@ color: #FFFFFF; }
   -ms-user-select: none;
 }
 
-p.intro {
+p{
   font-size: 32px;
   line-height: 39px;
   font-weight: regular;
@@ -102,7 +92,8 @@ p.intro {
   padding-bottom: 20%;}
 
 p.more{ 
-  font:25px "authentic", sans-serif;
+  font-size:15px;
+  font-family: "authentic", sans-serif;
   position: relative;
   padding-top: 20%;
   padding-bottom: 20%;
