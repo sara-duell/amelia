@@ -194,6 +194,7 @@ overflow: hidden;
     padding-bottom: 20%;
     }
   p.more {
+    display:block
     font-family: "authentic", Sans Serif;
     font-size: 14px;
     position: relative;
