@@ -55,12 +55,12 @@ canvas {
   z-index: 1;
 }
 
-div.bio {
+.bio {
   z-index: 2;
   position: absolute;
   margin-left: auto;
   margin-right: auto;  
-  top: 0%;
+  top: 5%;
   height:100%;
   width:70%;
   left: 15%;
@@ -83,7 +83,7 @@ p{
   line-height: 39px;
   font-weight: regular;
   color:white;
-   top: 40%;
+  padding-top: 10%;
   padding-bottom: 0%;}
 
 p.more{ 
@@ -163,11 +163,21 @@ overflow: hidden;
     object-fit: cover;
  } */
 
-div.bio {
+.bio {
   z-index: 3;
   width:90%;
   margin-left: 2%;
   margin-right: 2%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;  
+  top: 5%;
+  height:100%;
+  width:70%;
+  overflow:scroll;
+  overflow-x:hidden;
+  overflow-y:thin;
+  border:0px solid #FFFFFF;
   } 
 
 
