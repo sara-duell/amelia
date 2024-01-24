@@ -84,13 +84,13 @@ p{
   font-weight: regular;
   color:white;
   position: relative; top: 40%;
-  padding-bottom: 20%;}
+  padding-bottom: 0%;}
 
 p.more{ 
   font-size:15px;
   font-family: "authentic", sans-serif;
   position: relative;
-  padding-top: 20%;
+  padding-top: 5%;
   padding-bottom: 20%;
 }
 
@@ -177,14 +177,14 @@ div.bio {
     font-size: 26px;
     line-height: 29px;
     position: relative; top: 45%;
-    padding-bottom: 20%;
+    padding-bottom: 0%;
     }
   p.more {
     display:block;
     font-family: "authentic", Sans Serif;
     font-size: 14px;
     position: relative;
-    padding-top: 20%;
+    padding-top: 5%;
     padding-bottom: 20%;
   }
  
