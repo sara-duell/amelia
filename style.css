@@ -62,7 +62,7 @@ div.drawing_board {
     right: 0;
     top: 0;
     object-position: center bottom;
-    */ -o-object-fit: cover; */
+    /* -o-object-fit: cover; */
     object-fit: cover;
     z-index:-2; }
 
@@ -173,9 +173,9 @@ overflow: hidden;
   margin-top: 10px;
   margin-right: 30px;
 } 
-  div.drawing_board {
+ /* div.drawing_board {
     object-fit: cover;
- }
+ } */
 
  div.bio {
   z-index: 3;
