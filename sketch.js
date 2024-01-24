@@ -4,7 +4,7 @@ var txt;
 
 function preload() {
     img01 = loadImage("fog1.jpg");
-    img02 = loadImage("fog2a.jpg");
+    img02 = loadImage("fog2.jpg");
     txt = loadStrings ("bio.txt");
 }
 
@@ -12,7 +12,7 @@ function setup() {
   createCanvas(displayWidth, displayHeight);
   topLayer = createGraphics(displayWidth, displayHeight)
   
-  topLayer.image(img01, 0, 0, displayWidth, displayHeight)
+  topLayer.image(img01, 0, 0, 1440, 900)
   topLayer.strokeWeight(100);
   topLayer.blendMode(REMOVE)
 
@@ -21,7 +21,7 @@ createP(join (txt, "<br/>")).parent('intro');
 }
 
 function draw() {
-  image(img02, 0, 0, displayWidth, displayHeight);
+  image(img02, 0, 0, 1440, 900);
 
   if(mouseIsPressed) {
     topLayer.line(pmouseX, pmouseY, mouseX, mouseY);
