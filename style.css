@@ -102,7 +102,7 @@ p.more{
   border-bottom: 1px solid rgba(255, 255, 255, 0.4); 
  } 
 
- .writinglink:hover, .credit:hover  {
+ .writinglink:hover, {
   color:  rgba(0, 11, 32, 0.828);
   text-decoration: none;
   background-color:rgba(255, 255, 255, 0.4);
@@ -116,7 +116,6 @@ p.more{
 
 @media(max-width:880px){
   html, body {
-   /* background-image:url("images/fog1.jpg") ; */
     margin: 0;
     padding: 0;
     height:100%;
@@ -125,20 +124,11 @@ overflow: hidden;
   }
   .content{
     padding: 10px;
-    position:relative;
+    position: relative;
     display: flex;
-    flex-direction:column-reverse;
-    align-items:center;
+    flex-direction: column-reverse;
+    align-items: center;
     margin-top: 0px;
-  }
-  .portrait-desktop {
-    display:none;
-  }
-  .portrait-mobile {
-    display:block;
-  }
-  img {
-    width:80%;
   }
   .text {
     width: 90%;
@@ -160,9 +150,6 @@ overflow: hidden;
   margin-top: 10px;
   margin-right: 30px;
 } 
- /* div.drawing_board {
-    object-fit: cover;
- } */
 
 .bio {
   z-index: 3;
