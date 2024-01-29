@@ -14,7 +14,7 @@ function setup() {
   createCanvas(displayWidth, displayHeight);
   topLayer = createGraphics(displayWidth, displayHeight)
   
-  topLayer.image(img01, 0, 0, 1440, 900)
+  topLayer.image(img01, 0, 0, width, height)
   topLayer.strokeWeight(100);
   topLayer.blendMode(REMOVE)
  
@@ -23,7 +23,7 @@ createP(join (txt, "")).parent('intro');
 }
 
 function draw() {
-  image(img02, 0, 0, 1440, 900);
+  image(img02, 0, 0, width, height);
 
   if(mouseIsPressed) {
     topLayer.line(pmouseX, pmouseY, mouseX, mouseY);
