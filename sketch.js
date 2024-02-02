@@ -11,11 +11,8 @@ function preload() {
 function setup() {
   createCanvas(displayWidth, displayHeight);
   topLayer = createGraphics(displayWidth, displayHeight)
-  if (window.innerWidth > 880){
-  topLayer.image(img01, 0, 0, width, height);
-  } else {
-  topLayer.image(img01, 0, 0, width, height, 0, 0, img01.width, img01.height, COVER);
-  }
+  
+  topLayer.image(img01, 0, 0, width, height)
   topLayer.strokeWeight(100);
   topLayer.blendMode(REMOVE)
 
@@ -24,11 +21,7 @@ createP(join (txt, "<br/>")).parent('intro');
 }
 
 function draw() {
-   if (window.innerWidth > 880){
- image(img02, 0, 0, width, height);
-  } else {
-  topLayer.image(img02, 0, 0, width, height, 0, 0, img02.width, img02.height, COVER);
-  }
+  image(img02, 0, 0, width, height);
 
   if(mouseIsPressed) {
     topLayer.line(pmouseX, pmouseY, mouseX, mouseY);
@@ -45,3 +38,4 @@ function draw() {
 // 	let head = select('head');
 // 	meta.parent(head);
 // }
+
