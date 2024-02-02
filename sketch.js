@@ -11,8 +11,11 @@ function preload() {
 function setup() {
   createCanvas(displayWidth, displayHeight);
   topLayer = createGraphics(displayWidth, displayHeight)
-  
-  topLayer.image(img01, 0, 0, width, height)
+  if (window.innerWidth > 880){
+  topLayer.image(img01, 0, 0, width, height);
+  } else {
+  topLayer.image(img01, 0, 0, width, height, 0, 0, img01.width, img01.height, COVER);
+  }
   topLayer.strokeWeight(100);
   topLayer.blendMode(REMOVE)
 
@@ -21,7 +24,11 @@ createP(join (txt, "<br/>")).parent('intro');
 }
 
 function draw() {
-  image(img02, 0, 0, width, height);
+   if (window.innerWidth > 880){
+ image(img02, 0, 0, width, height);
+  } else {
+  topLayer.image(img02, 0, 0, width, height, 0, 0, img02.width, img02.height, COVER);
+  }
 
   if(mouseIsPressed) {
     topLayer.line(pmouseX, pmouseY, mouseX, mouseY);
