@@ -12,7 +12,7 @@ function setup() {
   createCanvas(displayWidth, displayHeight);
   topLayer = createGraphics(displayWidth, displayHeight)
   
-  topLayer.image(img01, 0, 0, width, height)
+  topLayer.image(img01, 0, 0, 1920, 1280, 0, 0, 1920, 1280, CONTAIN)
   topLayer.strokeWeight(100);
   topLayer.blendMode(REMOVE)
 
@@ -21,18 +21,17 @@ createP(join (txt, "<br/>")).parent('intro');
 }
 
 function draw() {
-    if (window.innerWidth < 768 || window.innerheight < 1024) {
-        image(img02, 0, 0, displayWidth, 1024);
-    } else {
-        image(img02, 0, 0, displayWidth, displayHeight);
-    }
-};
+   image(img02, 0, 0, 1920, 1280, 0, 0, 1920, 1280, CONTAIN);
 
   if(mouseIsPressed) {
     topLayer.line(pmouseX, pmouseY, mouseX, mouseY);
   }
   
   image(topLayer, 0, 0)
+}
+
+function windowResized(){
+  resizeCanvas(windowWidth, windowHeight);
 }
 
 // function createMetaTag() {
