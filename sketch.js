@@ -21,7 +21,12 @@ createP(join (txt, "<br/>")).parent('intro');
 }
 
 function draw() {
-  image(img02, 0, 0, width, height);
+    if (window.innerWidth < 768 || window.innerheight < 1024) {
+        image(img02, 0, 0, displayWidth, 1024);
+    } else {
+        image(img02, 0, 0, displayWidth, displayHeight);
+    }
+};
 
   if(mouseIsPressed) {
     topLayer.line(pmouseX, pmouseY, mouseX, mouseY);
