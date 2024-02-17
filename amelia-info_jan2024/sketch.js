@@ -14,7 +14,7 @@ function setup() {
   createCanvas(displayWidth, displayHeight);
   topLayer = createGraphics(displayWidth, displayHeight)
   
-  topLayer.image(img01, 0, 0, width, height)
+  topLayer.image(img01, 0, 0, 1920, 1280, 0, 0, 1920, 1280, CONTAIN)
   topLayer.strokeWeight(100);
   topLayer.blendMode(REMOVE)
  
@@ -23,7 +23,7 @@ createP(join (txt, "")).parent('intro');
 }
 
 function draw() {
-  image(img02, 0, 0, width, height);
+  image(img02, 0, 0, 1920, 1280, 0, 0, 1920, 1280, CONTAIN);
 
   if(mouseIsPressed) {
     topLayer.line(pmouseX, pmouseY, mouseX, mouseY);
@@ -31,7 +31,9 @@ function draw() {
   
   image(topLayer, 0, 0)
 }
-
+function windowResized(){
+  resizeCanvas(windowWidth, windowHeight);
+}
 // function createMetaTag() {
 // 	let meta = createElement('meta');
 // 	meta.attribute('name', 'viewport');
