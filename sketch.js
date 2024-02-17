@@ -4,9 +4,9 @@ var txt;
 
 
 function preload() {
-    img01 = loadImage('images/fog1night.jpg');
-    img02 = loadImage('images/fog2night.jpg');
-     txt = loadStrings("writings.txt");
+    img01 = loadImage('https://sara-duell.github.io/amelia/images/fog1night.jpg');
+    img02 = loadImage('https://sara-duell.github.io/amelia/images/fog2night.jpg');
+     txt = loadStrings("https://sara-duell.github.io/amelia/text/writings.txt");
 }
 
 function setup() {
