@@ -38,7 +38,7 @@ function draw() {
 }
 
 function windowResized(){
-  resizeCanvas(1920, 1080);
+  resizeCanvas(0, 0, 1920, 1080, 0, 0, 1920, 1080, CONTAIN);
 }
 
 // function createMetaTag() {
