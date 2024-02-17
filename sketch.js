@@ -3,9 +3,16 @@ let topLayer;
 var txt;
 
 function preload() {
+    if (displayWidth < 750) {
+    img01 = loadImage("images/fog1m.jpg");
+    img02 = loadImage("images/fog2m.jpg");
+    txt = loadStrings ("text/bio.txt");
+    } else {
     img01 = loadImage("images/fog1.jpg");
     img02 = loadImage("images/fog2.jpg");
     txt = loadStrings ("text/bio.txt");
+} 
+
 }
 
 function setup() {
