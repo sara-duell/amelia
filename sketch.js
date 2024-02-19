@@ -36,7 +36,6 @@ function draw() {
   image(topLayer, 0, 0)
 }
 function windowResized(){
-  centerCanvas();
     resizeCanvas(windowWidth, windowHeight);
 }
 
