@@ -28,7 +28,7 @@ createP(join (txt, "<br/>")).parent('intro');
 }
 
 function draw() {
-   image(img02, 0, 0);
+   image(img02, 0, 0, 1920, 1280, 0, 0, 1920, 1280, CONTAIN);
 
   if(mouseIsPressed) {
     topLayer.line(pmouseX, pmouseY, mouseX, mouseY);
@@ -38,7 +38,7 @@ function draw() {
 }
 
 function windowResized(){
-  resizeCanvas(0, 0, displayWidth, displayHeight, 0, 0, 1920, 1080, 0, 200, cover, left, bottom);
+  resizeCanvas(0, 0);
 }
 
 // function createMetaTag() {
