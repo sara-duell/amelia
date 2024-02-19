@@ -162,7 +162,7 @@ canvas {
   left: 2%;
   right:2%;
   position: absolute; 
-  top: 5%;
+  top: 0%;
   height:100%;
   overflow:scroll;
   overflow-x:hidden;
