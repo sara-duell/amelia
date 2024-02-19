@@ -123,7 +123,7 @@ p.more{
 overflow: hidden;
   }
   .content{
-    padding: 10px;
+    padding: 0px;
     position: relative;
     display: flex;
     flex-direction: column-reverse;
