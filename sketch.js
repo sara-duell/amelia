@@ -28,7 +28,7 @@ createP(join (txt, "<br/>")).parent('intro');
 }
 
 function draw() {
-   image(img02, 0, 0, 1920, 1280, 0, 0, 1920, 1280, CONTAIN);
+   image(img02, 0, 0);
 
   if(mouseIsPressed) {
     topLayer.line(pmouseX, pmouseY, mouseX, mouseY);
