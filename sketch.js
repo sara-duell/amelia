@@ -14,7 +14,7 @@ function preload() {
 } 
 
 }
-
+{
 function setup() {
   createCanvas(displayWidth, displayHeight);
   topLayer = createGraphics(displayWidth, displayHeight);
@@ -39,7 +39,7 @@ function draw() {
 function windowResized(){
   centerCanvas();
     resizeCanvas(windowWidth, windowHeight);
-}
+}}
 
 // function createMetaTag() {
 // 	let meta = createElement('meta');
