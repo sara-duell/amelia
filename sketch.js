@@ -3,7 +3,7 @@ let topLayer;
 var txt;
 
 function preload() {
-    if (displayWidth < 750) {
+    if (displayWidth < 880) {
     img01 = loadImage("images/fog1m.jpg");
     img02 = loadImage("images/fog2m.jpg");
     txt = loadStrings ("text/bio.txt");
