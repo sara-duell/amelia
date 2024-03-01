@@ -162,7 +162,7 @@ p {
     padding: 0;
     height:100%;
     width:100%;
-overflow: scroll;
+overflow: hidden;
   }
   .content{
     padding: 10px;
