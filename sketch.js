@@ -37,8 +37,8 @@ function draw() {
 }
 function windowResized(){
     resizeCanvas(windowWidth, windowHeight);
-    resizeImage(windowWidth, windowHeight);
-}
+var img = document.getElementById('image02');
+    img.style.width = "100%";}
 
 // function createMetaTag() {
 // 	let meta = createElement('meta');
