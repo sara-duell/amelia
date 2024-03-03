@@ -16,9 +16,11 @@ function preload() {
 }
 
 function setup() {
+  //createMetaTag();
   createCanvas(displayWidth, displayHeight);
-  topLayer = createGraphics(window.innerWidth, window.innerHeight);
-  topLayer.image(img01, 0, 0, window.innerWidth, window.innerHeight, 0, 0, 2500, 1667, COVER);
+  topLayer = createGraphics(displayWidth, displayHeight)
+  
+  topLayer.image(img01, 0, 0, displayWidth, displayHeight, 0, 0, 2500, 1667, COVER)
   topLayer.strokeWeight(100);
   topLayer.blendMode(REMOVE)
  
@@ -27,18 +29,17 @@ createP(join (txt, "")).parent('intro');
 }
 
 function draw() {
-  image(img02, 0, 0, window.innerWidth, window.innerHeight, 0, 0, 2500, 1667, COVER);
+  image(img02, 0, 0, displayWidth, displayHeight, 0, 0, 2500, 1667, COVER);
 
   if(mouseIsPressed) {
     topLayer.line(pmouseX, pmouseY, mouseX, mouseY);
   }
-
+  
   image(topLayer, 0, 0)
 }
 function windowResized(){
-    resizeCanvas(windowWidth, windowHeight);
-var img = document.getElementById('image02');
-    img.style.width = "100%";}
+  resizeCanvas(windowWidth, windowHeight);
+}
 
 // function createMetaTag() {
 // 	let meta = createElement('meta');
