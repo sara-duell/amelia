@@ -185,7 +185,7 @@ overflow: scroll;
     width: 90%;
   }
   .nav {
-    position: fixed;
+    position: relative;
     display: flex;
     justify-content: flex-end;
     z-index: 5;
