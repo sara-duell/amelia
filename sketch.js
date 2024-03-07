@@ -16,11 +16,9 @@ function preload() {
 }
 
 function setup() {
-  //createMetaTag();
   createCanvas(displayWidth, displayHeight);
-  topLayer = createGraphics(displayWidth, displayHeight)
-  
-  topLayer.image(img01, 0, 0, window.innerWidth, window.innerHeight, 0, 0, 2500, 1667, COVER)
+  topLayer = createGraphics(displayWidth, displayHeight);
+  topLayer.image(img01, 0, 0, window.innerWidth, window.innerHeight, 0, 0, 2500, 1667, COVER);
   topLayer.strokeWeight(100);
   topLayer.blendMode(REMOVE)
  
@@ -34,11 +32,11 @@ function draw() {
   if(mouseIsPressed) {
     topLayer.line(pmouseX, pmouseY, mouseX, mouseY);
   }
-  
+
   image(topLayer, 0, 0)
 }
 function windowResized(){
-  resizeCanvas(windowWidth, windowHeight);
+    resizeCanvas(windowWidth, windowHeight);
 }
 
 // function createMetaTag() {
@@ -49,4 +47,3 @@ function windowResized(){
 // 	let head = select('head');
 // 	meta.parent(head);
 // }
-
