@@ -33,7 +33,7 @@ function draw() {
 }
 function windowResized(){
     resizeCanvas(windowWidth, windowHeight);
-    topLayer.resize(windowWidth, windowHeight);
+    resizeGraphics(windowWidth, windowHeight);
 }
 // function createMetaTag() {
 // 	let meta = createElement('meta');
