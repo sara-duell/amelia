@@ -11,8 +11,8 @@ function preload() {
 
 function setup() {
   //createMetaTag();
-  createCanvas(displayWidth, displayHeight);
-  topLayer = createGraphics(displayWidth, displayHeight)
+  createCanvas(windowWidth, windowHeight);
+  topLayer = createGraphics(windowWidth, windowHeight)
   
   topLayer.image(img01, 0, 0, windowWidth, windowHeight, 0, 0, 2500, 1667, COVER)
   topLayer.strokeWeight(100);
