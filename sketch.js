@@ -16,8 +16,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(displayWidth, displayHeight);
-  topLayer = createGraphics(displayWidth, displayHeight);
+  createCanvas(windowWidth, windowHeight);
+  topLayer = createGraphics(windowWidth, windowHeight);
   topLayer.image(img01, 0, 0, window.innerWidth, window.innerHeight, 0, 0, 2500, 1667, COVER);
   topLayer.strokeWeight(100);
   topLayer.blendMode(REMOVE)
