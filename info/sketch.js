@@ -32,7 +32,8 @@ function draw() {
   image(topLayer, 0, 0)
 }
 function windowResized(){
-  resizeCanvas(windowWidth, windowHeight);
+    resizeCanvas(windowWidth, windowHeight);
+    topLayer.resize(windowWidth, windowHeight);
 }
 // function createMetaTag() {
 // 	let meta = createElement('meta');
