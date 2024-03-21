@@ -2,9 +2,9 @@ html, body {
   background-color: rgb(23, 0, 80);
   margin: 0;
   padding: 0;
-  overflow: hidden;
   height:100%;
   width:100%;
+  overflow: scroll;
   color: rgb(255, 255, 255);
    user-select: none;
   -moz-user-select: none;
@@ -62,10 +62,21 @@ canvas {
   z-index: 1;
 }
 
+
+.content::-webkit-scrollbar {
+  display: block;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.bio {
+  -ms-overflow-style: scroll;  /* IE and Edge */
+  scrollbar-width: 10px;  /* Firefox */
+}
+
 .content{
   padding: 50px;
   display:flex;
-  position: absolute;
+  position: relative;
   justify-content: center;
   align-items: center;
   z-index: 3;

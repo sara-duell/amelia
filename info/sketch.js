@@ -4,37 +4,56 @@ var txt;
 
 
 function preload() {
-    img01 = loadImage('images/fog1night.jpg');
-    img02 = loadImage('images/fog2night.jpg');
-     txt = loadStrings("writings.txt");
+  if (displayWidth < 880) {
+      img01 = loadImage("images/fog1nightm.jpg");
+      img02 = loadImage("images/fog2nightm.jpg");
+      txt = loadStrings ("text/writings.txt");
+  }
+  else {
+      img01 = loadImage("images/fog1.jpg");
+      img02 = loadImage("images/fog2.jpg");
+      txt = loadStrings ("text/writings.txt");
+  } 
 }
 
 function setup() {
-  //createMetaTag();
   createCanvas(windowWidth, windowHeight);
-  topLayer = createGraphics(windowWidth, windowHeight)
-  
-  topLayer.image(img01, 0, 0, windowWidth, windowHeight, 0, 0, 2500, 1667, COVER)
+
+  bottomLayer = createGraphics(windowWidth, windowHeight);
+  bottomLayer.image(img02, 0, 0, windowWidth, windowHeight, 0, 0, 2500, 1667, COVER);
+
+  topLayer = createGraphics(windowWidth, windowHeight);
+  topLayer.image(img01, 0, 0, windowWidth, windowHeight, 0, 0, 2500, 1667, COVER);
   topLayer.strokeWeight(100);
   topLayer.blendMode(REMOVE)
- 
-    console.log(txt);
-createP(join (txt, "")).parent('intro');
+
+  console.log(txt);
+  createP(join (txt, "")).parent('intro');
+
+  originalWidth = windowWidth;
+  originalHeight = windowHeight;
 }
 
 function draw() {
-  image(img02, 0, 0, windowWidth, windowHeight, 0, 0, 2500, 1667, COVER);
-
+  image(bottomLayer, 0, 0, windowWidth, windowHeight, 0, 0, 2500, 1667, COVER);
+  image(topLayer, 0, 0, windowWidth, windowHeight, 0, 0, 2500, 1667, COVER);
   if(mouseIsPressed) {
-    topLayer.line(pmouseX, pmouseY, mouseX, mouseY);
+      topLayer.line(mouseX, mouseY, pmouseX, pmouseY);
   }
-  
-  image(topLayer, 0, 0)
 }
-function windowResized(){
-    resizeCanvas(windowWidth, windowHeight);
-    resizeGraphics(windowWidth, windowHeight);
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+  bottomLayer = createGraphics(windowWidth, windowHeight);
+  bottomLayer.image(img02, 0, 0, windowWidth, windowHeight, 0, 0, 2500, 1667, COVER);
+
+  topLayer = createGraphics(windowWidth, windowHeight);
+  topLayer.image(img01, 0, 0, windowWidth, windowHeight, 0, 0, 2500, 1667, COVER);
+  topLayer.strokeWeight(100);
+  topLayer.blendMode(REMOVE)
 }
+
+
 // function createMetaTag() {
 // 	let meta = createElement('meta');
 // 	meta.attribute('name', 'viewport');

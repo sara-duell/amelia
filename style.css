@@ -5,8 +5,18 @@ html, body {
   overflow: hidden;
   height:100%;
   width:100%;
- 
 }
+
+.bio::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.bio {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 @font-face {
   font-family: "authentic";
   src: url(fonts/BBBPoppinsTN-TextRegular.woff);

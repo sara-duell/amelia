@@ -4,40 +4,52 @@ var txt;
 
 function preload() {
     if (displayWidth < 880) {
-    img01 = loadImage("images/fog1m.jpg");
-    img02 = loadImage("images/fog2m.jpg");
-    txt = loadStrings ("text/bio.txt");
-    } else {
-    img01 = loadImage("images/fog1.jpg");
-    img02 = loadImage("images/fog2.jpg");
-    txt = loadStrings ("text/bio.txt");
-} 
-
+        img01 = loadImage("images/fog1m.jpg");
+        img02 = loadImage("images/fog2m.jpg");
+        txt = loadStrings ("text/bio.txt");
+    }
+    else {
+        img01 = loadImage("images/fog1.jpg");
+        img02 = loadImage("images/fog2.jpg");
+        txt = loadStrings ("text/bio.txt");
+    } 
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
-  topLayer = createGraphics(windowWidth, windowHeight);
-  topLayer.image(img01, 0, 0, window.innerWidth, window.innerHeight, 0, 0, 2500, 1667, COVER);
-  topLayer.strokeWeight(100);
-  topLayer.blendMode(REMOVE)
+    createCanvas(windowWidth, windowHeight);
+
+    bottomLayer = createGraphics(windowWidth, windowHeight);
+    bottomLayer.image(img02, 0, 0, windowWidth, windowHeight, 0, 0, 2500, 1667, COVER);
+
+    topLayer = createGraphics(windowWidth, windowHeight);
+    topLayer.image(img01, 0, 0, windowWidth, windowHeight, 0, 0, 2500, 1667, COVER);
+    topLayer.strokeWeight(100);
+    topLayer.blendMode(REMOVE)
  
     console.log(txt);
-createP(join (txt, "")).parent('intro');
+    createP(join (txt, "")).parent('intro');
+
+    originalWidth = windowWidth;
+    originalHeight = windowHeight;
 }
 
 function draw() {
-  image(img02, 0, 0, window.innerWidth, window.innerHeight, 0, 0, 2500, 1667, COVER);
-
-  if(mouseIsPressed) {
-    topLayer.line(pmouseX, pmouseY, mouseX, mouseY);
-  }
-
-  image(topLayer, 0, 0)
+    image(bottomLayer, 0, 0, windowWidth, windowHeight, 0, 0, 2500, 1667, COVER);
+    image(topLayer, 0, 0, windowWidth, windowHeight, 0, 0, 2500, 1667, COVER);
+    if(mouseIsPressed) {
+        topLayer.line(mouseX, mouseY, pmouseX, pmouseY);
+    }
 }
-function windowResized(){
+
+function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
-    resizetopLayer(windowWidth, windowHeight);
+    bottomLayer = createGraphics(windowWidth, windowHeight);
+    bottomLayer.image(img02, 0, 0, windowWidth, windowHeight, 0, 0, 2500, 1667, COVER);
+
+    topLayer = createGraphics(windowWidth, windowHeight);
+    topLayer.image(img01, 0, 0, windowWidth, windowHeight, 0, 0, 2500, 1667, COVER);
+    topLayer.strokeWeight(100);
+    topLayer.blendMode(REMOVE)
 }
 
 // function createMetaTag() {
