@@ -10,8 +10,8 @@ function preload() {
       txt = loadStrings ("text/writings.txt");
   }
   else {
-      img01 = loadImage("images/fog1.jpg");
-      img02 = loadImage("images/fog2.jpg");
+      img01 = loadImage("images/fog1night.jpg");
+      img02 = loadImage("images/fog2night.jpg");
       txt = loadStrings ("text/writings.txt");
   } 
 }
