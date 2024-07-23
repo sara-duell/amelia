@@ -1,3 +1,5 @@
+<a href="https://nymag.com/intelligencer/article/alzheimers-disease-gene-test-apoe4-23andme-stories.html"  class="writinglink"  target="_blank">When You Know You Might Forget Everyhing: Living With the Alzheimer's Gene</a></br>
+<span class="source"> New York Magazine, July, 2024</span></br></br>
 <a href="https://www.motherjones.com/politics/2023/06/the-weight-of-water-women-mariners-abused-at-sea-are-finally-breaking-their-silence/" class="writinglink" target="_blank">
 The Weight of Water: Women Mariners Abused at Sea Are Finally Breaking Their Silence</a></br>
 <span class="source"> Mother Jones, July, 2023</span></br></br>
@@ -7,6 +9,8 @@ The Transgender Family Handbook: 144 specific suggestions, from trans young peop
 <a href="https://www.thecut.com/2021/07/restorative-justice-lessons.html" class="writinglink"  target="_blank">
 Will You Ever Change? Can face-to-face meetings between a victim and an abuser help a society overwhelmed with bad behavior?</a></br>
 <span class="source"> New York Magazine, July, 2021</span></br></br>
+<a href="https://www.thecut.com/2019/09/coming-forward-about-sexual-assault-and-what-comes-after.html"  class="writinglink"  target="_blank">Was It Worth It? Coming Forward About Sexual Assault, and What Came After</a></br>
+<span class="source"> New York Magazine, September, 2019</span></br></br>
 <a href="https://medium.com/the-awl/the-house-where-you-live-forever-65539347cde2" class="writinglink"  target="_blank">
 The House Where You Live Forever: The Reversible Destiny of Madeline Gins</a></br>
 <span class="source">Longreads, August, 2016</span>
